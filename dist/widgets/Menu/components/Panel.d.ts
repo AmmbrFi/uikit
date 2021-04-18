@@ -1,5 +1,5 @@
-import React from "react";
-import { PanelProps, PushedProps } from "../types";
+import { PanelProps, PushedProps } from '../types';
+import React from 'react';
 interface Props extends PanelProps, PushedProps {
     showMenu: boolean;
     isMobile: boolean;
