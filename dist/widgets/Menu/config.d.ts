@@ -1,4 +1,4 @@
-import { LinkStatus } from "./types";
+import { LinkStatus } from './types';
 export declare const status: {
     LIVE: LinkStatus;
     SOON: LinkStatus;
@@ -60,5 +60,5 @@ export declare const socials: ({
 })[];
 export declare const MENU_HEIGHT = 64;
 export declare const MENU_ENTRY_HEIGHT = 48;
-export declare const SIDEBAR_WIDTH_FULL = 240;
-export declare const SIDEBAR_WIDTH_REDUCED = 56;
+export declare const SIDEBAR_WIDTH_FULL = 0;
+export declare const SIDEBAR_WIDTH_REDUCED = 0;
