@@ -46,12 +46,11 @@ const BodyWrapper = styled.div`
 
 const Link = styled.a`
   display: inline-flex;
-  margin-right: 5px;
+  margin-right: 10px;
   cursor: pointer;
   color: #fff;
-  font-size: 18px;
+  font-size: 1.2rem;
   &:hover {
-    text-decoration: underline;
     color: #e64e2e;
   }
 `
