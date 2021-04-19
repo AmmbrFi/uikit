@@ -44,6 +44,17 @@ const BodyWrapper = styled.div`
   display: flex;
 `
 
+const Link = styled.a`
+  display: inline-flex;
+  margin-right: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  &:hover {
+    text-decoration: underline;
+    color: #e64e2e;
+  }
+`
 const MiddleMenuWrapper = styled.div`
   display: flex;
   flex-flow: center;
@@ -141,10 +152,10 @@ const Menu: React.FC<NavProps> = ({
         />
         <Flex>
           <MiddleMenuWrapper>
-            <a href="https://qmm.ammbr.finance">Farming</a>
-            <a href="https://swap-beta.ammbr.finance">Swap</a>
-            <a href="https://trade.ammbr.finance">Trade</a>
-            <a href="https://nft.ammbr.finance">NFTs</a>
+            <Link href="https://qmm.ammbr.finance">Farming</Link>
+            <Link href="https://swap-beta.ammbr.finance">Swap</Link>
+            <Link href="https://trade.ammbr.finance">Trade</Link>
+            <Link href="https://nft.ammbr.finance">NFTs</Link>
           </MiddleMenuWrapper>
         </Flex>
         <Flex>
