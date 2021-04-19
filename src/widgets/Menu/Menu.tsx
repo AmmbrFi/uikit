@@ -44,6 +44,13 @@ const BodyWrapper = styled.div`
   display: flex;
 `
 
+const MiddleMenuWrapper = styled.div`
+  display: flex;
+  flex-flow: center;
+  align-items: center;
+  flex-direction: row;
+`
+
 const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   flex-grow: 1;
   margin-top: ${({ showMenu }) => (showMenu ? `${MENU_HEIGHT}px` : 0)};
@@ -132,6 +139,14 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? '/'}
         />
+        <Flex>
+          <MiddleMenuWrapper>
+            <a href="https://qmm.ammbr.finance">Farming</a>
+            <a href="https://swap-beta.ammbr.finance">Swap</a>
+            <a href="https://trade.ammbr.finance">Trade</a>
+            <a href="https://nft.ammbr.finance">NFTs</a>
+          </MiddleMenuWrapper>
+        </Flex>
         <Flex>
           <UserBlock account={account} login={login} logout={logout} />
         </Flex>
