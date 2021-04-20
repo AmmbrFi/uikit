@@ -3330,7 +3330,7 @@ var UserBlock = function (_a) {
 var UserBlock$1 = React.memo(UserBlock, function (prevProps, nextProps) { return prevProps.account === nextProps.account; });
 
 var Wrapper = styled.div(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
-var StyledNav = styled.nav(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {
+var StyledNav = styled.nav(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 1px #374151;\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: fixed;\n  top: ", ";\n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n  height: ", "px;\n  background-color: ", ";\n  border-bottom: solid 1px #374151;\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? 0 : "-" + MENU_HEIGHT + "px");
 }, MENU_HEIGHT, function (_a) {
@@ -3518,7 +3518,7 @@ var lightColors = __assign(__assign(__assign({}, baseColors), brandColors), { ba
         blue: 'linear-gradient(180deg, #A7E8F1 0%, #94E1F2 100%)',
         violet: 'linear-gradient(180deg, #E2C9FB 0%, #CDB8FA 100%)'
     } });
-var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: '#9A6AFF', background: '#111622', backgroundDisabled: '#3c3742', backgroundAlt: '#27262c', contrast: '#FFFFFF', dropdown: '#1E1D20', invertedContrast: '#191326', input: '#483f5a', inputSecondary: '#66578D', primaryDark: '#0098A1', tertiary: '#353547', text: '#EAE2FC', textDisabled: '#666171', textSubtle: '#A28BD4', borderColor: '#524B63', gradients: {
+var darkColors = __assign(__assign(__assign({}, baseColors), brandColors), { secondary: '#9A6AFF', background: '#111622', backgroundDisabled: '#3c3742', backgroundAlt: '#374151', contrast: '#FFFFFF', dropdown: '#1E1D20', invertedContrast: '#191326', input: '#483f5a', inputSecondary: '#66578D', primaryDark: '#0098A1', tertiary: '#353547', text: '#EAE2FC', textDisabled: '#666171', textSubtle: '#A28BD4', borderColor: '#524B63', gradients: {
         bubblegum: 'linear-gradient(139.73deg, #313D5C 0%, #3D2A54 100%)',
         cardHeader: 'linear-gradient(166.77deg, #3B4155 0%, #3A3045 100%)',
         blue: 'linear-gradient(180deg, #00707F 0%, #19778C 100%)',
