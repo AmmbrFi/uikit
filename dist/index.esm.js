@@ -1852,13 +1852,19 @@ var Icon$7 = function (props) {
 var rotate = keyframes(templateObject_1$h || (templateObject_1$h = __makeTemplateObject(["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"], ["\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n"])));
 var float = keyframes(templateObject_2$8 || (templateObject_2$8 = __makeTemplateObject(["\n\t0% {\n\t\ttransform: translatey(0px);\n\t}\n\t50% {\n\t\ttransform: translatey(10px);\n\t}\n\t100% {\n\t\ttransform: translatey(0px);\n\t}\n"], ["\n\t0% {\n\t\ttransform: translatey(0px);\n\t}\n\t50% {\n\t\ttransform: translatey(10px);\n\t}\n\t100% {\n\t\ttransform: translatey(0px);\n\t}\n"])));
 var Container = styled.div(templateObject_3$4 || (templateObject_3$4 = __makeTemplateObject(["\n  position: relative;\n"], ["\n  position: relative;\n"])));
-var RotatingPancakeIcon = styled(Icon$7)(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"])), rotate);
-var FloatingPanIcon = styled(Icon$8)(templateObject_5$2 || (templateObject_5$2 = __makeTemplateObject(["\n  animation: ", " 6s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  animation: ", " 6s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"])), float);
+styled(Icon$7)(templateObject_4$3 || (templateObject_4$3 = __makeTemplateObject(["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  position: absolute;\n  top: 0;\n  left: 0;\n  animation: ", " 2s linear infinite;\n  transform: translate3d(0, 0, 0);\n"])), rotate);
+styled(Icon$8)(templateObject_5$2 || (templateObject_5$2 = __makeTemplateObject(["\n  animation: ", " 6s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"], ["\n  animation: ", " 6s ease-in-out infinite;\n  transform: translate3d(0, 0, 0);\n"])), float);
 var Spinner = function (_a) {
-    var _b = _a.size, size = _b === void 0 ? 128 : _b;
+    _a.size;
     return (React.createElement(Container, null,
-        React.createElement(RotatingPancakeIcon, { width: size * 0.5 + "px" }),
-        React.createElement(FloatingPanIcon, { width: size + "px" })));
+        React.createElement("svg", { xmlns: "http://www.w3.org/2000/svg", viewBox: "0 0 213.333 213.333" },
+            React.createElement("path", { d: "M203.636 101.818h-38.788c-5.355 0-9.697 4.342-9.697 9.697s4.342 9.697 9.697 9.697h38.788c5.355 0 9.697-4.342 9.697-9.697s-4.341-9.697-9.697-9.697z", fill: "#2d50a7" }),
+            React.createElement("path", { d: "M48.485 101.818H9.697c-5.355 0-9.697 4.342-9.697 9.697s4.342 9.697 9.697 9.697h38.788c5.355 0 9.697-4.342 9.697-9.697s-4.342-9.697-9.697-9.697z", fill: "#73a1fb" }),
+            React.createElement("path", { d: "M168.378 36.09L140.95 63.518c-3.787 3.786-3.787 9.926 0 13.713a9.664 9.664 0 006.856 2.841 9.66 9.66 0 006.857-2.841l27.428-27.428c3.787-3.786 3.787-9.926 0-13.713-3.786-3.787-9.926-3.787-13.713 0z", fill: "#355ec9" }),
+            React.createElement("g", { fill: "#c4d9fd" },
+                React.createElement("path", { d: "M106.667 169.697c-5.355 0-9.697 4.342-9.697 9.697v19.394c0 5.355 4.342 9.697 9.697 9.697 5.355 0 9.697-4.342 9.697-9.697v-19.394c0-5.355-4.342-9.697-9.697-9.697zM58.669 145.799l-27.427 27.428a9.696 9.696 0 000 13.713 9.667 9.667 0 006.857 2.84 9.663 9.663 0 006.856-2.84l27.427-27.428a9.696 9.696 0 000-13.713c-3.786-3.787-9.926-3.787-13.713 0z" })),
+            React.createElement("path", { d: "M106.667 4.848c-5.355 0-9.697 4.342-9.697 9.697v38.788c0 5.355 4.342 9.697 9.697 9.697 5.355 0 9.697-4.342 9.697-9.697V14.545c0-5.355-4.342-9.697-9.697-9.697z", fill: "#3d6deb" }),
+            React.createElement("path", { d: "M44.956 36.09c-3.786-3.787-9.926-3.787-13.713 0a9.696 9.696 0 000 13.713L58.67 77.231a9.664 9.664 0 006.857 2.841 9.662 9.662 0 006.856-2.841c3.787-3.786 3.787-9.926 0-13.713L44.956 36.09z", fill: "#5286fa" }))));
 };
 var templateObject_1$h, templateObject_2$8, templateObject_3$4, templateObject_4$3, templateObject_5$2;
 
