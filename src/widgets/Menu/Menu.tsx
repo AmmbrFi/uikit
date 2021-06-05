@@ -21,6 +21,11 @@ const Wrapper = styled.div`
   width: 100%;
 `
 
+const FlexLogo = styled.div`
+  display: flex;
+  align-items: 'center';
+`
+
 const StyledNav = styled.nav<{ showMenu: boolean }>`
   position: fixed;
   top: ${({ showMenu }) => (showMenu ? 0 : `-${MENU_HEIGHT}px`)};
@@ -150,7 +155,7 @@ const Menu: React.FC<NavProps> = ({
   return (
     <Wrapper>
       <StyledNav showMenu={showMenu}>
-        <Flex>
+        <FlexLogo>
           <Logo
             isPushed={isPushed}
             togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
@@ -158,7 +163,7 @@ const Menu: React.FC<NavProps> = ({
             href={homeLink?.href ?? '/'}
           />
           <Price>{cakePriceUsd ? `$${cakePriceUsd.toFixed(5)}` : ''}</Price>
-        </Flex>
+        </FlexLogo>
         <Flex>
           <MiddleMenuWrapper>
             <Link href="https://qmm.ammbr.finance">Farming</Link>
