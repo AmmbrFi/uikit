@@ -21,11 +21,6 @@ const Wrapper = styled.div`
   width: 100%;
 `
 
-const FlexLogo = styled.div`
-  display: flex;
-  align-items: 'center';
-`
-
 const StyledNav = styled.nav<{ showMenu: boolean }>`
   position: fixed;
   top: ${({ showMenu }) => (showMenu ? 0 : `-${MENU_HEIGHT}px`)};
@@ -64,6 +59,7 @@ const Price = styled.p`
   cursor: pointer;
   color: #fff;
   font-size: 1.3rem;
+  margin-top: 8px;
 `
 
 const MiddleMenuWrapper = styled.div`
@@ -155,7 +151,7 @@ const Menu: React.FC<NavProps> = ({
   return (
     <Wrapper>
       <StyledNav showMenu={showMenu}>
-        <FlexLogo>
+        <Flex>
           <Logo
             isPushed={isPushed}
             togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
@@ -163,7 +159,7 @@ const Menu: React.FC<NavProps> = ({
             href={homeLink?.href ?? '/'}
           />
           <Price>{cakePriceUsd ? `$${cakePriceUsd.toFixed(5)}` : ''}</Price>
-        </FlexLogo>
+        </Flex>
         <Flex>
           <MiddleMenuWrapper>
             <Link href="https://qmm.ammbr.finance">Farming</Link>
