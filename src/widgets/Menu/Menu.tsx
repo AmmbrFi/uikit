@@ -149,6 +149,7 @@ const Menu: React.FC<NavProps> = ({
           isDark={isDark}
           href={homeLink?.href ?? '/'}
         />
+        {` ${cakePriceUsd}`}
         <Flex>
           <MiddleMenuWrapper>
             <Link href="https://qmm.ammbr.finance">Farming</Link>
