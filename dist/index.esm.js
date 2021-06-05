@@ -3339,8 +3339,9 @@ var StyledNav = styled.nav(templateObject_2 || (templateObject_2 = __makeTemplat
 });
 var BodyWrapper = styled.div(templateObject_3 || (templateObject_3 = __makeTemplateObject(["\n  position: relative;\n  display: flex;\n"], ["\n  position: relative;\n  display: flex;\n"])));
 var Link = styled.a(templateObject_4 || (templateObject_4 = __makeTemplateObject(["\n  display: inline-flex;\n  margin-right: 10px;\n  cursor: pointer;\n  color: #fff;\n  font-size: 1.2rem;\n  &:hover {\n    color: #e64e2e;\n  }\n"], ["\n  display: inline-flex;\n  margin-right: 10px;\n  cursor: pointer;\n  color: #fff;\n  font-size: 1.2rem;\n  &:hover {\n    color: #e64e2e;\n  }\n"])));
-var MiddleMenuWrapper = styled.div(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n  display: flex;\n  flex-flow: center;\n  align-items: center;\n  flex-direction: row;\n"], ["\n  display: flex;\n  flex-flow: center;\n  align-items: center;\n  flex-direction: row;\n"])));
-var Inner = styled.div(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n\n  ", " {\n    margin-left: ", ";\n    max-width: ", ";\n  }\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n\n  ", " {\n    margin-left: ",
+var Price = styled.p(templateObject_5 || (templateObject_5 = __makeTemplateObject(["\n  cursor: pointer;\n  color: #fff;\n  font-size: 1.3rem;\n"], ["\n  cursor: pointer;\n  color: #fff;\n  font-size: 1.3rem;\n"])));
+var MiddleMenuWrapper = styled.div(templateObject_6 || (templateObject_6 = __makeTemplateObject(["\n  display: flex;\n  flex-flow: center;\n  align-items: center;\n  flex-direction: row;\n"], ["\n  display: flex;\n  flex-flow: center;\n  align-items: center;\n  flex-direction: row;\n"])));
+var Inner = styled.div(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n\n  ", " {\n    margin-left: ", ";\n    max-width: ", ";\n  }\n"], ["\n  flex-grow: 1;\n  margin-top: ", ";\n  transition: margin-top 0.2s, margin-left 0.2s cubic-bezier(0.4, 0, 0.2, 1);\n  transform: translate3d(0, 0, 0);\n  max-width: 100%;\n\n  ", " {\n    margin-left: ",
     ";\n    max-width: ",
     ";\n  }\n"])), function (_a) {
     var showMenu = _a.showMenu;
@@ -3355,7 +3356,7 @@ var Inner = styled.div(templateObject_6 || (templateObject_6 = __makeTemplateObj
     var isPushed = _a.isPushed;
     return "calc(100% - " + (isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED) + "px)";
 });
-var MobileOnlyOverlay = styled(Overlay)(templateObject_7 || (templateObject_7 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
+var MobileOnlyOverlay = styled(Overlay)(templateObject_8 || (templateObject_8 = __makeTemplateObject(["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"], ["\n  position: fixed;\n  height: 100%;\n\n  ", " {\n    display: none;\n  }\n"])), function (_a) {
     var theme = _a.theme;
     return theme.mediaQueries.nav;
 });
@@ -3401,7 +3402,7 @@ var Menu = function (_a) {
         React.createElement(StyledNav, { showMenu: showMenu },
             React.createElement(Flex, null,
                 React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : '/' }),
-                React.createElement("p", null, "Price " + cakePriceUsd)),
+                React.createElement(Price, null, cakePriceUsd ? "$" + cakePriceUsd.toFixed(5) : '')),
             React.createElement(Flex, null,
                 React.createElement(MiddleMenuWrapper, null,
                     React.createElement(Link, { href: "https://qmm.ammbr.finance" }, "Farming"),
@@ -3414,7 +3415,7 @@ var Menu = function (_a) {
             React.createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React.createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
-var templateObject_1$3, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7;
+var templateObject_1$3, templateObject_2, templateObject_3, templateObject_4, templateObject_5, templateObject_6, templateObject_7, templateObject_8;
 
 var ToastAction = function (_a) {
     var action = _a.action;

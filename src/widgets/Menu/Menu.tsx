@@ -54,6 +54,13 @@ const Link = styled.a`
     color: #e64e2e;
   }
 `
+
+const Price = styled.p`
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.3rem;
+`
+
 const MiddleMenuWrapper = styled.div`
   display: flex;
   flex-flow: center;
@@ -150,7 +157,7 @@ const Menu: React.FC<NavProps> = ({
             isDark={isDark}
             href={homeLink?.href ?? '/'}
           />
-          <p>{`Price ${cakePriceUsd}`}</p>
+          <Price>{cakePriceUsd ? `$${cakePriceUsd.toFixed(5)}` : ''}</Price>
         </Flex>
         <Flex>
           <MiddleMenuWrapper>
