@@ -3399,7 +3399,9 @@ var Menu = function (_a) {
     var homeLink = links.find(function (link) { return link.label === 'Home'; });
     return (React.createElement(Wrapper, null,
         React.createElement(StyledNav, { showMenu: showMenu },
-            React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : '/' }), " " + cakePriceUsd,
+            React.createElement(Flex, null,
+                React.createElement(Logo$1, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : '/' }),
+                React.createElement("p", null, "Price " + cakePriceUsd)),
             React.createElement(Flex, null,
                 React.createElement(MiddleMenuWrapper, null,
                     React.createElement(Link, { href: "https://qmm.ammbr.finance" }, "Farming"),
