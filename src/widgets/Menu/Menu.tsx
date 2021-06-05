@@ -143,13 +143,15 @@ const Menu: React.FC<NavProps> = ({
   return (
     <Wrapper>
       <StyledNav showMenu={showMenu}>
-        <Logo
-          isPushed={isPushed}
-          togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
-          isDark={isDark}
-          href={homeLink?.href ?? '/'}
-        />
-        {` ${cakePriceUsd}`}
+        <Flex>
+          <Logo
+            isPushed={isPushed}
+            togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
+            isDark={isDark}
+            href={homeLink?.href ?? '/'}
+          />
+          <p>{`Price ${cakePriceUsd}`}</p>
+        </Flex>
         <Flex>
           <MiddleMenuWrapper>
             <Link href="https://qmm.ammbr.finance">Farming</Link>
