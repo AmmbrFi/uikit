@@ -164,6 +164,7 @@ const Menu: React.FC<NavProps> = ({
           <MiddleMenuWrapper>
             <Link href="https://qmm.ammbr.finance">Farming</Link>
             <Link href="https://swap-beta.ammbr.finance">Swap</Link>
+            <Link href="https://swap-beta.ammbr.finance">Swap sd</Link>
             <Link href="https://trade.ammbr.finance">Trade</Link>
             <Link href="https://nft.ammbr.finance">NFTs</Link>
           </MiddleMenuWrapper>
