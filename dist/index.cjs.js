@@ -3418,7 +3418,7 @@ var Menu = function (_a) {
             React__default['default'].createElement(Flex, null,
                 React__default['default'].createElement(MiddleMenuWrapper, null,
                     React__default['default'].createElement(Link, { href: "https://qmm.ammbr.finance" }, "Farming"),
-                    React__default['default'].createElement(Link, { href: "https://swap-beta.ammbr.finance" }, "Swap"),
+                    React__default['default'].createElement(Link, { href: "https://swap-beta.ammbr.finance" }, "Bridge"),
                     React__default['default'].createElement(Link, { href: "https://trade.ammbr.finance" }, "Trade"),
                     React__default['default'].createElement(Link, { href: "https://nft.ammbr.finance" }, "NFTs"))),
             React__default['default'].createElement(Flex, null,
