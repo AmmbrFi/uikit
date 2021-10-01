@@ -3405,7 +3405,7 @@ var Menu = function (_a) {
             React.createElement(Flex, null,
                 React.createElement(MiddleMenuWrapper, null,
                     React.createElement(Link, { href: "https://qmm.ammbr.finance" }, "Farming"),
-                    React.createElement(Link, { href: "https://swap-beta.ammbr.finance" }, "Swap"),
+                    React.createElement(Link, { href: "https://swap-beta.ammbr.finance" }, "Bridge"),
                     React.createElement(Link, { href: "https://trade.ammbr.finance" }, "Trade"),
                     React.createElement(Link, { href: "https://nft.ammbr.finance" }, "NFTs"))),
             React.createElement(Flex, null,
