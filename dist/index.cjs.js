@@ -3125,7 +3125,7 @@ var Logo = function (_a) {
     _a.isPushed; _a.togglePush; var isDark = _a.isDark, href = _a.href;
     var isAbsoluteUrl = href.startsWith('http');
     var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
-        React__default['default'].createElement(Icon$I, { className: "mobile-icon" }),
+        React__default['default'].createElement(Icon$H, { className: "mobile-icon" }),
         React__default['default'].createElement(LogoWithText, { className: "desktop-icon", isDark: isDark })));
     return (React__default['default'].createElement(Flex, null, isAbsoluteUrl ? (React__default['default'].createElement(StyledLink, { as: "a", href: href, "aria-label": "Ammbr home page" }, innerLogo)) : (React__default['default'].createElement(StyledLink, { to: href, "aria-label": "Ammbr home page" }, innerLogo))));
 };
@@ -3697,8 +3697,8 @@ exports.LaurelRightIcon = Icon$K;
 exports.Link = Link$1;
 exports.LinkExternal = LinkExternal;
 exports.ListViewIcon = Icon$J;
-exports.LogoIcon = Icon$I;
-exports.LogoNew = Icon$H;
+exports.Logo = Icon$I;
+exports.LogoIcon = Icon$H;
 exports.LogoRoundIcon = Icon$G;
 exports.MedalBronzeIcon = Icon$F;
 exports.MedalGoldIcon = Icon$E;
